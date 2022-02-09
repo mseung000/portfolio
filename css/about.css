@@ -1,0 +1,454 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{border: 0;}
+
+body, html{
+    font-family:'NanumSquare';
+}
+
+.notice{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    cursor: pointer;
+}
+.notice p {
+    margin-bottom: 10px;
+}
+.notice i{
+    font-size: 40px;
+}
+.notice span{
+    font-size: 20px;
+    padding-top: 40px;
+    display: none;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about_me .title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_me .title h2{
+    font-size: 60px;
+    color: #06BF00;
+    text-align: center;
+}
+.about_me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_me .ab_contents{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+.about_me .ab_contents .about_me_img{
+    width: 50%;
+    height: 100%;
+}
+.about_me .ab_contents .about_me_img img{
+    margin-right: 20%;
+    float: right;
+}
+.about_me .ab_contents .about_me_txt{
+    width: 50%;
+    height: 100%;
+}
+.about_me .about_me_txt section h3{
+    color: #FFC400;
+    font-size: 30px;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}
+.about_me .about_me_txt section p{
+    font-size: 24px;
+    padding: 1.2% 0;
+}
+.what{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.what .title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what .title h2{
+    font-size: 60px;
+    color: #06BF00;
+    text-align: center;
+    padding-top: 30px;
+}
+.what .what_contents{
+    width: 80%;
+    height: 80%;
+    /* display: flex;
+    align-items: center; */
+}
+.what .what_contents li{
+    width: 20%;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+    padding-top: 300px;
+    opacity: 0;
+}
+.what .what_contents li.on{
+    animation: whatAni 0.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes whatAni {
+    0%{padding-top: 300px; opacity: 0;}
+    100%{padding-top: 20px; opacity: 1;}
+}
+.what .what_contents li img{
+    width: 100%;
+    height: 100%;
+}
+
+.skill .title{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.skill .title h2{
+    font-size: 60px;
+    color: #06BF00;
+    text-align: center;
+}
+.skill .skill_contents{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill .skill_contents ul{
+    width: 60%;
+    height: 86%;
+}
+.skill .skill_contents ul li{
+    width: 100%;
+    height: 14.285714%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill .skill_contents ul li .txt{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill .skill_contents ul li .txt h3{
+    font-size: 20px;
+}
+.skill .skill_contents ul li.con p{
+    width: 88%;
+    height: 60%;
+    background-color: #999;
+    overflow: hidden;
+    position: relative;
+}
+.skill .skill_contents ul li p span{
+    transition: all 1s;
+}
+.skill .skill_contents ul li p.Ps span{
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: #FFC400;
+    position: absolute;
+    left: -80%;
+}
+.skill .skill_contents ul li p.Ai span{
+    display: block;
+    width: 90%;
+    height: 100%;
+    background-color: #FFC400;
+    position: absolute;
+    left: -90%;
+}
+.skill .skill_contents ul li p.Xd span{
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: #FFC400;
+    position: absolute;
+    left: -80%;
+}
+.skill .skill_contents ul li p.HTML span{
+    display: block;
+    width: 70%;
+    height: 100%;
+    background-color: #FFC400;
+    position: absolute;
+    left: -70%;
+}
+.skill .skill_contents ul li p.CSS span{
+    display: block;
+    width: 70%;
+    height: 100%;
+    background-color: #FFC400;
+    position: absolute;
+    left: -70%;
+}
+.skill .skill_contents ul li p.JS span{
+    display: block;
+    width: 60%;
+    height: 100%;
+    background-color: #FFC400;
+    position: absolute;
+    left: -60%;
+}
+.skill .skill_contents ul li p span.on{
+    left: 0;
+}
+.skill .skill_contents ul li.btn_wrap{
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+.skill .skill_contents ul li.btn_wrap .btn{
+    width: 10%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.skill .skill_contents ul li.btn_wrap .btn p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.skill .skill_contents ul li.btn_wrap .btn:hover{
+    border-color: #06BF00;
+    background-color: #06BF00;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 1px solid #707070;
+}
+footer p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFC400;
+}
+
+@media screen and (max-width:1280px) {
+    .about_me .title{
+        height: 20%;
+    }
+    .about_me .title h2{
+        font-size: 50px;
+    }
+    .about_me .ab_contents{
+        height: 80%;
+        flex-direction: column;
+    }
+    .about_me .ab_contents .about_me_img{
+        width: 100%;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_me .ab_contents .about_me_img img{
+        width: 212px;
+        margin-right: 0;
+    }
+    .about_me .ab_contents .about_me_txt{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about_me .ab_contents .about_me_txt .left{
+        width: 50%;
+        height: 100%;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .about_me .ab_contents .about_me_txt .right{
+        width: 50%;
+        height: 100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .about_me .about_me_txt section h3{
+        font-size: 26px;
+        padding-top: 3%;
+        padding-bottom: 1%;
+    }
+    .about_me .about_me_txt section p{
+        font-size: 20px;
+    }
+    .what .title h2{
+        font-size: 50px;
+    }
+    .what .what_contents li{
+        width: 25%;
+    }
+    .skill .title h2{
+        font-size: 50px;
+    }
+    .skill .skill_contents ul{
+        width: 70%;
+        height: 70%;
+    }
+    .skill .skill_contents ul li.btn_wrap .btn{
+        width: 14%;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .what .what_contents li{
+        width: 33.33333%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .about_me .title{
+        height: 14%;
+    }
+    .about_me .title h2{
+        font-size: 42px;
+    }
+    .about_me .ab_contents{
+        height: 86%;
+    }
+    .about_me .ab_contents .about_me_txt{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .about_me .about_me_txt section h3{
+        padding-top: 1%;
+        padding-bottom: 0.5%;
+        font-size: 24px;
+    }
+    .about_me .about_me_txt section p{
+        font-size: 18px;
+    }
+    .about_me .ab_contents .about_me_txt .left{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin-right: 0;
+    }
+    .about_me .ab_contents .about_me_txt .right{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .what .title h2{
+        font-size: 42px;
+    }
+    .what .what_contents li {
+        padding: 30px;
+    }
+    .skill .title{
+        height: 20%;
+    }
+    .skill .title h2{
+        font-size: 42px;
+    }
+    .skill .skill_contents{
+        height: 80%;
+    }
+    .skill .skill_contents ul{
+        width: 80%;
+    }
+    footer{
+        height: 80px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .about_me .title{
+        height: 16%;
+    }
+    .about_me .ab_contents{
+        height: 84%;
+    }
+    .about_me .ab_contents .about_me_img{
+        height: 200px;
+    }
+    .about_me .ab_contents .about_me_img img{
+        width: 160px;
+    }
+    .what .title{
+        height: 16%;
+    }
+    .what .what_contents{
+        height: 84%;
+    }
+    .what .what_contents li{
+        padding: 20px;
+    }
+    .skill .skill_contents ul li .txt h3{
+        font-size: 16px;
+    }
+    .skill .skill_contents ul li.btn_wrap .btn p{
+        font-size: 16px;
+    }
+    .skill .skill_contents ul li.btn_wrap .btn{
+        width: 30%;
+    }
+    footer{
+        height: 60px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .what .what_contents li{
+        width: 50%;
+    }
+}
